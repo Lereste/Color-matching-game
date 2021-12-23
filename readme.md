@@ -1,6 +1,10 @@
 # Color Matching Game | Written in pure javascript
 
-DEMO: [https://color-matching-by-lereste.vercel.app//](https://color-matching-by-lereste.vercel.app/)
+DEMO: 
+
+[https://color-matching-by-lereste.vercel.app//](https://color-matching-by-lereste.vercel.app/)
+
+[https://lereste.github.io/Color-matching-game/](https://lereste.github.io/Color-matching-game/)
 
 ![color matching game](./images/thumbnail.png)
 
