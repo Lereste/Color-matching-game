@@ -78,7 +78,7 @@ function handleColorClick(liElement) {
     if (gameStatus !== GAME_STATUS.FINISHED) {
       gameStatus = GAME_STATUS.PLAYING;
     }
-  }, 500);
+  }, 250);
 }
 
 function initColors() {
