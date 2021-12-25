@@ -6,7 +6,7 @@ DEMO:
 
 [https://lereste.github.io/Color-matching-game/](https://lereste.github.io/Color-matching-game/)
 
-![color matching game](./images/thumbnail.png)
+![color matching](https://user-images.githubusercontent.com/63438266/147390554-4cedf098-c7fa-442c-9524-8cad8022e643.png)
 
 ## Game rule 
 
