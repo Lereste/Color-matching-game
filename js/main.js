@@ -1,6 +1,6 @@
 import { GAME_STATUS, GAME_TIME, PAIRS_COUNT } from './constants.js';
 import { createTimer, getRandomColorPairs, hidePlayAgainButton, setTimerText, showPlayAgainButton } from './utils.js';
-import { getColorElementList, getColorListElement, getInActiveColorList, getPlayAgainButton } from './selectors.js';
+import { getColorBackground, getColorElementList, getColorListElement, getInActiveColorList, getPlayAgainButton } from './selectors.js';
 
 // Global variables
 let selections = [];
@@ -58,11 +58,15 @@ function handleColorClick(liElement) {
 
       gameStatus = GAME_STATUS.FINISHED;
     }
-
     selections = [];
+
+    // update new background when match 2 color
+    const updateBackgroundColor = getColorBackground();
+    updateBackgroundColor.style.backgroundColor = liElement.getAttribute('data-color');
+
     return;
   }
-  
+ 
   // in case of not match
   // remove active class for 2 li elements
   gameStatus = GAME_STATUS.BLOCKING;
@@ -94,7 +98,7 @@ function initColors() {
     const overlayElement = liElement.querySelector('.overlay');
     if (overlayElement) {
       overlayElement.style.backgroundColor = colorList[index];
-    }
+    } 
   });
 }
 
